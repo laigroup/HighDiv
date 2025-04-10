@@ -1,7 +1,7 @@
-# LIA-Sampler: A Tool for High-Diversity Sampling in Satisfiability Modulo Linear Integer Arithmetic
+# HighDiv: SMT(LIA) Sampling with High Diversity
 
 ## 1. Project Structure
-In LIA-Sampler, three sampling modes have been implemented, namely *LS-MODE*, *CDCL-MODE*, and *HYBRID-MODE*. The framework for each mode is as follows:
+In HighDiv, three sampling modes have been implemented, namely *LS-MODE*, *CDCL-MODE*, and *HYBRID-MODE*. The framework for each mode is as follows:
 
 ### 1.1. Framework of HighDiv
 ![alt text](pics/framework.png)
@@ -99,7 +99,7 @@ make
 
 ## 3. Usage
 
-Run a test case to see how LIA-Sampler works:
+Run a test case to see how HighDiv works:
 ```bash
 ./HighDiv -i LIA_bench/LIA_convert_query-1164.smt2 -o samples -n 10 -t 900 -s 123 -m hybrid
 ```
