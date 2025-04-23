@@ -1,7 +1,7 @@
 # HighDiv: SMT(LIA) Sampling with High Diversity
 
 ## 1. Project Structure
-In HighDiv, three sampling modes have been implemented, namely *LS-MODE*, *CDCL-MODE*, and *HYBRID-MODE*. The framework for each mode is as follows:
+In HighDiv, three sampling modes have been implemented, namely *LS-MODE*, *CDCL-MODE*, and *HYBRID-MODE*.
 
 ### 1.1. Framework of HighDiv
 ![alt text](pics/framework.png)
@@ -70,6 +70,12 @@ In the `./HighDiv/src` folder, we use z3's C++ API to encapsulate the sampling a
 Note that since this framework relies on certain tactics in z3 (e.g., `solve-eqs`), it requires the use of z3's model generation and model transformation mechanisms.
 
 ## 2. Installation
+
+```bash
+git clone git@github.com:laigroup/HighDiv.git
+git submodule init && git submodule update
+```
+
 ### 2.1. Compile z3
 
 To ensure compatibility and performance, we recommend compiling Z3 within a controlled Python virtual environment:
