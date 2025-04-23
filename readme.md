@@ -71,7 +71,12 @@ Note that since this framework relies on certain tactics in z3 (e.g., `solve-eqs
 
 ## 2. Installation
 
+### 2.0. Prerequisites
+
 ```bash
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv
+sudo apt-get install build-essential cmake
 git clone git@github.com:laigroup/HighDiv.git
 cd HighDiv
 git submodule init && git submodule update
@@ -85,7 +90,6 @@ First, activate the Python virtual environment.
 
 ```bash
 # Activate the Python virtual environment
-cd HighDiv
 python3 -m venv venv
 source venv/bin/activate
 
