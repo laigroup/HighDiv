@@ -73,6 +73,7 @@ Note that since this framework relies on certain tactics in z3 (e.g., `solve-eqs
 
 ```bash
 git clone git@github.com:laigroup/HighDiv.git
+cd HighDiv
 git submodule init && git submodule update
 ```
 
